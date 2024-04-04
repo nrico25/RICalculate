@@ -34,10 +34,10 @@ public class fragment2 extends Fragment implements adapterBangunDatar.ItemClickL
         RecyclerView rvBangunRuang = view.findViewById(R.id.rvBangunRuang);
         ListDataBangunRuang= new ArrayList<>();
 
-        ListDataBangunRuang.add(new modelDatar("Kubus","https://i.pinimg.com/736x/8b/56/98/8b56982510d466f45635afa41c1d8d2f.jpg"));
-        ListDataBangunRuang.add(new modelDatar("Balok","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.biography.com%2Fpolitical-figures%2Fmao-tse-tung&psig=AOvVaw1pQWKlXJIAKGCZ6eTKbcuE&ust=1711599019931000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMDjga_Jk4UDFQAAAAAdAAAAABAJ"));
-        ListDataBangunRuang.add(new modelDatar("Tabung","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.biography.com%2Fpolitical-figures%2Fmao-tse-tung&psig=AOvVaw1pQWKlXJIAKGCZ6eTKbcuE&ust=1711599019931000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMDjga_Jk4UDFQAAAAAdAAAAABAJ"));
-        ListDataBangunRuang.add(new modelDatar("Kerucut","https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.biography.com%2Fpolitical-figures%2Fmao-tse-tung&psig=AOvVaw1pQWKlXJIAKGCZ6eTKbcuE&ust=1711599019931000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMDjga_Jk4UDFQAAAAAdAAAAABAJ"));
+        ListDataBangunRuang.add(new modelDatar("Kubus","https://i.pinimg.com/564x/12/51/ab/1251ab1a9a8d45c3ea7d09d517e9189e.jpg"));
+        ListDataBangunRuang.add(new modelDatar("Balok",""));
+        ListDataBangunRuang.add(new modelDatar("Tabung",""));
+        ListDataBangunRuang.add(new modelDatar("Kerucut",""));
 
         rvBangunRuang.setLayoutManager(new LinearLayoutManager(getContext()));
         adapterBangunDatar adapter = new adapterBangunDatar(getContext(), R.layout.layout_bangun, ListDataBangunRuang);

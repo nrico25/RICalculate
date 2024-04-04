@@ -7,14 +7,16 @@
     tools:context=".calculator.kubus"
     android:background="@drawable/grid_background">
 
-    <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="124dp"
-        android:src="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/sisi"
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="168dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kubus"
+        android:textSize="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,13 +35,14 @@
 
     <Button
         android:id="@+id/hitung"
-        android:layout_width="114dp"
-        android:layout_height="65dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="#FFC83C"        android:layout_height="65dp"
         android:text="Hitung"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sisi"
         app:layout_constraintVertical_bias="0.194" />
 

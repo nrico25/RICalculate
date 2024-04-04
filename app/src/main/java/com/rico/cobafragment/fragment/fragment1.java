@@ -38,9 +38,9 @@ public class fragment1 extends Fragment implements adapterBangunDatar.ItemClickL
         ListDataBangun= new ArrayList<>();
 
         ListDataBangun.add(new modelDatar("Segitiga","https://png.pngtree.com/element_our/png/20181226/triangle-line-black-icon-png_281642.jpg"));
-        ListDataBangun.add(new modelDatar("Persegi","https://png.pngtree.com/element_our/png/20181226/triangle-line-black-icon-png_281642.jpg"));
-        ListDataBangun.add(new modelDatar("Persegi Panjang","https://png.pngtree.com/element_our/png/20181226/triangle-line-black-icon-png_281642.jpg"));
-        ListDataBangun.add(new modelDatar("Lingkaran","https://png.pngtree.com/element_our/png/20181226/triangle-line-black-icon-png_281642.jpg"));
+        ListDataBangun.add(new modelDatar("Persegi","https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Regular_quadrilateral.svg/250px-Regular_quadrilateral.svg.png"));
+        ListDataBangun.add(new modelDatar("Persegi Panjang","https://upload.wikimedia.org/wikipedia/commons/7/7f/Rectangle_%28plain%29.svg"));
+        ListDataBangun.add(new modelDatar("Lingkaran","https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Circle_-_black_simple.svg/640px-Circle_-_black_simple.svg.png"));
 
         rvBangunDatar.setLayoutManager(new LinearLayoutManager(getContext()));
         adapterBangunDatar adapter = new adapterBangunDatar(getContext(), R.layout.layout_bangun, ListDataBangun);

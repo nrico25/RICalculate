@@ -7,74 +7,77 @@
     tools:context=".calculator.balok"
     android:background="@drawable/grid_background">
 
-    <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="124dp"
-        android:src="@color/black"
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Balok"
+        android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/panjang"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.071" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/panjang"
         android:layout_width="391dp"
         android:layout_height="71dp"
+        android:layout_marginTop="460dp"
+        android:background="@drawable/editext_frame"
         android:hint="Masukan Panjang"
         android:inputType="number"
         android:paddingLeft="24dp"
-        android:background="@drawable/editext_frame"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/lebar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/lebar"
         android:layout_width="391dp"
         android:layout_height="71dp"
+        android:background="@drawable/editext_frame"
         android:hint="Masukan Lebar"
         android:inputType="number"
         android:paddingLeft="24dp"
-        android:background="@drawable/editext_frame"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tinggi"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.575" />
+        app:layout_constraintTop_toBottomOf="@+id/panjang"
+        app:layout_constraintVertical_bias="0.266" />
 
     <EditText
         android:id="@+id/tinggi"
         android:layout_width="391dp"
         android:layout_height="71dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="192dp"
+        android:background="@drawable/editext_frame"
         android:hint="Masukan Tinggi"
         android:inputType="number"
         android:paddingLeft="24dp"
-        android:background="@drawable/editext_frame"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.707" />
+        app:layout_constraintTop_toBottomOf="@+id/lebar" />
 
     <Button
         android:id="@+id/hitung"
-        android:layout_width="114dp"
-        android:layout_height="65dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="#FFC83C"        android:layout_height="65dp"
         android:text="Hitung"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tinggi"
-        app:layout_constraintVertical_bias="0.148" />
+        app:layout_constraintVertical_bias="0.238" />
 
     <TextView
         android:id="@+id/hasil"
@@ -87,6 +90,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hitung"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

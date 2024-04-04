@@ -7,16 +7,20 @@
     tools:context=".calculator.persegiPanjang"
     android:background="@drawable/grid_background">
 
-    <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="124dp"
-        android:src="@color/black"
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="168dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Persegi Panjang"
+        android:textSize="40dp"
         app:layout_constraintBottom_toTopOf="@+id/panjang"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/panjang"
@@ -34,27 +38,28 @@
     <EditText
         android:id="@+id/lebar"
         android:layout_width="391dp"
-        android:inputType="number"
         android:layout_height="71dp"
-        android:hint="Masukan Lebar"
-        android:paddingLeft="24dp"
         android:background="@drawable/editext_frame"
+        android:hint="Masukan Lebar"
+        android:inputType="number"
+        android:paddingLeft="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.624" />
 
     <Button
         android:id="@+id/hitung"
-        android:layout_width="114dp"
         android:layout_height="65dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:backgroundTint="#FFC83C"
         android:text="Hitung"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lebar"
         app:layout_constraintVertical_bias="0.35" />
 
