@@ -38,7 +38,7 @@ public class fragment1 extends Fragment implements adapterBangunDatar.ItemClickL
         ListDataBangun= new ArrayList<>();
 
         ListDataBangun.add(new modelDatar("Segitiga","https://img.freepik.com/premium-vector/3d-watermelon-slice-with-seeds-cartoon-vector-illustration-isolated-watermelon-triangle-slice_668332-47.jpgx"));
-        ListDataBangun.add(new modelDatar("Persegi","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"));
+        ListDataBangun.add(new modelDatar("Persegi","https://illustoon.com/photo/7257.png"));
         ListDataBangun.add(new modelDatar("Persegi Panjang","https://cahayamustika.com/image/cache/catalog/A%20WHITEBOARD/WHITEBOARD-500x500.png"));
         ListDataBangun.add(new modelDatar("Lingkaran","https://m.media-amazon.com/images/I/61taOJJ7-sS._AC_UF894,1000_QL80_DpWeblab_.jpg"));
 
