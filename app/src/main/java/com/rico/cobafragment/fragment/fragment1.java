@@ -37,10 +37,10 @@ public class fragment1 extends Fragment implements adapterBangunDatar.ItemClickL
         RecyclerView rvBangunDatar = view.findViewById(R.id.rvBangunDatar);
         ListDataBangun= new ArrayList<>();
 
-        ListDataBangun.add(new modelDatar("Segitiga","https://png.pngtree.com/element_our/png/20181226/triangle-line-black-icon-png_281642.jpg"));
-        ListDataBangun.add(new modelDatar("Persegi","https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Regular_quadrilateral.svg/250px-Regular_quadrilateral.svg.png"));
-        ListDataBangun.add(new modelDatar("Persegi Panjang","https://upload.wikimedia.org/wikipedia/commons/7/7f/Rectangle_%28plain%29.svg"));
-        ListDataBangun.add(new modelDatar("Lingkaran","https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Circle_-_black_simple.svg/640px-Circle_-_black_simple.svg.png"));
+        ListDataBangun.add(new modelDatar("Segitiga","https://img.freepik.com/premium-vector/3d-watermelon-slice-with-seeds-cartoon-vector-illustration-isolated-watermelon-triangle-slice_668332-47.jpgx"));
+        ListDataBangun.add(new modelDatar("Persegi","https://static.wikia.nocookie.net/scribblenauts/images/d/d1/Square.png/revision/latest?cb=20140813193140"));
+        ListDataBangun.add(new modelDatar("Persegi Panjang","https://cahayamustika.com/image/cache/catalog/A%20WHITEBOARD/WHITEBOARD-500x500.png"));
+        ListDataBangun.add(new modelDatar("Lingkaran","https://m.media-amazon.com/images/I/61taOJJ7-sS._AC_UF894,1000_QL80_DpWeblab_.jpg"));
 
         rvBangunDatar.setLayoutManager(new LinearLayoutManager(getContext()));
         adapterBangunDatar adapter = new adapterBangunDatar(getContext(), R.layout.layout_bangun, ListDataBangun);

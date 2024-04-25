@@ -34,10 +34,10 @@ public class fragment2 extends Fragment implements adapterBangunDatar.ItemClickL
         RecyclerView rvBangunRuang = view.findViewById(R.id.rvBangunRuang);
         ListDataBangunRuang= new ArrayList<>();
 
-        ListDataBangunRuang.add(new modelDatar("Kubus","https://i.pinimg.com/564x/12/51/ab/1251ab1a9a8d45c3ea7d09d517e9189e.jpg"));
-        ListDataBangunRuang.add(new modelDatar("Balok",""));
-        ListDataBangunRuang.add(new modelDatar("Tabung",""));
-        ListDataBangunRuang.add(new modelDatar("Kerucut",""));
+        ListDataBangunRuang.add(new modelDatar("Kubus","https://m.media-amazon.com/images/I/61fB-s4DPVS._AC_UF1000,1000_QL80_.jpg"));
+        ListDataBangunRuang.add(new modelDatar("Balok","https://www.mickgeorge.co.uk/content/uploads/2023/08/215mm-Hollow-7N-Concrete-Block.jpg"));
+        ListDataBangunRuang.add(new modelDatar("Tabung","https://www.argex.co.uk/wp-content/uploads/2020/10/Large-Tube-1-1.jpg"));
+        ListDataBangunRuang.add(new modelDatar("Kerucut","https://dishub.kulonprogokab.go.id/files/news/normal/80c9bf33ebbb2e282917a3555f7b5ce9.jpg"));
 
         rvBangunRuang.setLayoutManager(new LinearLayoutManager(getContext()));
         adapterBangunDatar adapter = new adapterBangunDatar(getContext(), R.layout.layout_bangun, ListDataBangunRuang);
